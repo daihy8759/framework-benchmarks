@@ -31,9 +31,7 @@ public class MainVerticle extends AbstractVerticle {
         connectOptions.setCachePreparedStatements(true);
         client = PgPool.pool(vertx, connectOptions, new PoolOptions());
         Router router = Router.router(vertx);
-        router.get("/").handler(rc -> {
-            this.handle(rc);
-        });
+        router.get("/").handler(this::handle);
         return vertx.createHttpServer().requestHandler(router).rxListen(8089).ignoreElement();
     }
 
