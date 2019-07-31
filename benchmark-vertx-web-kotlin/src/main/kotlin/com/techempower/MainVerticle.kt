@@ -18,7 +18,10 @@ import kotlinx.coroutines.launch
 class MainVerticle : CoroutineVerticle() {
 
     private lateinit var client: SqlClient
-    private val SELECT_WORLD = "SELECT id from world where id=$1"
+
+    companion object {
+        private const val SELECT_WORLD = "SELECT id from world where id=$1"
+    }
 
     override suspend fun start() {
         val connectOptions = PgConnectOptions()
