@@ -4,12 +4,12 @@
 Running 10s test @ http://127.0.0.1:8089
   2 threads and 1000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.49ms   17.13ms 437.92ms   99.21%
-    Req/Sec    22.25k     7.06k   29.34k    84.02%
-  429816 requests in 10.02s, 18.86MB read
-  Socket errors: connect 749, read 200, write 106, timeout 0
-Requests/sec:  42912.03
-Transfer/sec:      1.88MB
+    Latency     6.38ms   18.73ms 433.80ms   98.60%
+    Req/Sec    25.61k     7.47k   33.06k    88.14%
+  494685 requests in 10.01s, 21.70MB read
+  Socket errors: connect 749, read 121, write 0, timeout 0
+Requests/sec:  49398.50
+Transfer/sec:      2.17MB
 ```
 
 ## benchmark-vertx-web
@@ -19,12 +19,12 @@ Transfer/sec:      1.88MB
 Running 10s test @ http://127.0.0.1:8089
   2 threads and 1000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.91ms   28.21ms 601.90ms   99.21%
-    Req/Sec    20.61k     7.40k   28.04k    81.05%
-  390207 requests in 10.03s, 17.12MB read
-  Socket errors: connect 749, read 251, write 4, timeout 0
-Requests/sec:  38912.84
-Transfer/sec:      1.71MB
+    Latency     5.60ms   14.57ms 400.90ms   99.21%
+    Req/Sec    23.73k     8.05k   33.33k    78.35%
+  458414 requests in 10.02s, 20.11MB read
+  Socket errors: connect 749, read 255, write 7, timeout 0
+Requests/sec:  45751.74
+Transfer/sec:      2.01MB
 ```
 
 ## benchmark-vertx-web-kotlin
@@ -34,12 +34,12 @@ Transfer/sec:      1.71MB
 Running 10s test @ http://127.0.0.1:8089
   2 threads and 1000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    11.36ms   35.35ms 657.94ms   98.82%
-    Req/Sec    13.37k     5.58k   20.27k    73.40%
-  250588 requests in 10.04s, 10.99MB read
-  Socket errors: connect 749, read 228, write 37, timeout 0
-Requests/sec:  24956.65
-Transfer/sec:      1.09MB
+    Latency     8.08ms   24.38ms 564.62ms   99.00%
+    Req/Sec    17.61k     6.42k   22.65k    81.77%
+  336556 requests in 10.02s, 14.76MB read
+  Socket errors: connect 749, read 249, write 19, timeout 0
+Requests/sec:  33594.42
+Transfer/sec:      1.47MB
 ```
 
 ## benchmark-vertx-web-rx
